@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
             scanf(" %3s", &m);
             for (int i = 0; i < 3; i++) 
                 m[i] = toupper(m[i]);
-            m[4] = '\0';
+            m[3] = '\0';
             
             if (!(
                 strcmp(m, "JAN") == 0| 
