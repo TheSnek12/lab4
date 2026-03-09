@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
 
         while(1){
             printf("Enter your birth month [JAN|FEB|...|DEC] ");
-            scanf(" %s", &m);
+            scanf(" %3s", &m);
             for (int i = 0; i < 3; i++) 
                 m[i] = toupper(m[i]);
             m[4] = '\0';
