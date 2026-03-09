@@ -100,11 +100,26 @@ int main(int argc, char const *argv[])
 }
 
 void get_subject(char letter, char *subject) {
-    if (letter <= 'E') strcpy(subject, "The bird");
-    if (letter <= 'J') strcpy(subject, "The dragon");
-    if (letter <= 'O') strcpy(subject, "The fish");
-    if (letter <= 'T') strcpy(subject, "The elephant");
-    if (letter <= 'Z') strcpy(subject, "The cow");
+    if (letter <= 'E'){
+        strcpy(subject, "The bird");
+        return;
+    }
+    if (letter <= 'J'){
+        strcpy(subject, "The dragon");
+        return;
+    }
+    if (letter <= 'O'){
+        strcpy(subject, "The fish");
+        return;
+    }
+    if (letter <= 'T'){
+        strcpy(subject, "The elephant");
+        return;
+    }
+    if (letter <= 'Z'){
+        strcpy(subject, "The cow");
+        return;
+    }
 }
 
 void get_verb(char *month, char *verb) {
@@ -138,9 +153,24 @@ void get_verb(char *month, char *verb) {
 }
 
 void get_adverb(int digit, char *adverb) {
-    if (digit <= 1) strcpy(adverb, "remarkably");
-    if (digit <= 3) strcpy(adverb, "dashingly");
-    if (digit <= 5) strcpy(adverb, "impressively");
-    if (digit <= 7) strcpy(adverb, "diabolically");
-    if (digit <= 9) strcpy(adverb, "outlandishly");
+    if (digit <= 1){
+        strcpy(adverb, "remarkably");
+        return;
+    }
+    if (digit <= 3){
+        strcpy(adverb, "dashingly");
+        return;
+    }
+    if (digit <= 5){
+        strcpy(adverb, "impressively");
+        return;
+    }
+    if (digit <= 7){
+        strcpy(adverb, "diabolically");
+        return;
+    }
+    if (digit <= 9){
+        strcpy(adverb, "outlandishly");
+        return;
+    }
 }
