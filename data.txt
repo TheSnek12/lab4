@@ -1,0 +1,9 @@
+Customer Name	|	Jolyne Cujoh 
+Account Number	|	531-34576-1208-46 
+Report Date	|	10/18/2024 
+Stock Name	|	TSLA
+Shares Held	|	892 
+Opening Price	|	220.71 
+High Price	|	222.28 
+Low Price	|	219.23 
+Closing Price	|	220.70

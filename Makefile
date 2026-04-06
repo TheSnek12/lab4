@@ -4,7 +4,7 @@
 
 CC = gcc
 CFLAGS = -g -Wall -std=c99 -pedantic-errors
-TARGET = lab6_dbazler_007
+TARGET = lab8_dbazler_007
 LIBS = -lm
 
 $(TARGET) : $(TARGET).c
