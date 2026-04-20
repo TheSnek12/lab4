@@ -1,10 +1,10 @@
 #David Bazler G01582055
 #CS 262 Lab Section 007
-#Project 2
+#Lab 10
 
 CC = gcc
 CFLAGS = -g -Wall -std=c99 -pedantic-errors
-TARGET = lab9_dbazler_007
+TARGET = lab10_dbazler_007
 LIBS = -lm
 
 $(TARGET) : $(TARGET).c
