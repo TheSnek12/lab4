@@ -1,14 +1,15 @@
-#David Bazler G01582055
-#CS 262 Lab Section 007
-#Lab 11
-
 CC = gcc
-CFLAGS = -g -Wall -std=c99 -pedantic-errors
-TARGET = lab11_dbazler_007
-LIBS = -lm
+CFLAGS = -g -Wall -Werror -std=gnu99
 
-$(TARGET) : $(TARGET).c
-	$(CC) $(TARGET).c -o $(TARGET) $(CFLAGS) $(LIBS)
+TARGET = p3_dbazler_007
 
-clean: 
-	rm $(TARGET)
+all: $(TARGET)
+
+$(TARGET): p3_satq.o
+	$(CC) $(CFLAGS) $^ -o $@
+
+p3_satq.o: p3_satq.c structs.h constants.h
+	$(CC) $(CFLAGS) -c p3_satq.c -o p3_satq.o
+
+clean:
+	rm -f $(TARGET) *.o
